@@ -47,7 +47,7 @@ const Title = styled.h1`
   font-weight: 100;
   line-height: 1;
   margin-bottom: 3rem;
-  color: #727272;
+  color: var(--yellow);
   font-family: 'Playfair Display', 'Georgia', 'Cambria';
 
   span {
