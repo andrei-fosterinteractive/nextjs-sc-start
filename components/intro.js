@@ -36,9 +36,10 @@ const Section = styled.section`
 `
 
 const Container = styled.div`
-  @media (min-width: 1200px) {
-    max-width: 2000px;
-    padding-left: 12rem;
+  padding: 0 2rem;
+
+  @media (min-width: ${props => props.theme.screen.lg}) {
+    padding: 0 12rem;
   }
 `
 
@@ -48,7 +49,9 @@ const Title = styled.h1`
   line-height: 1;
   margin-bottom: 3rem;
   color: var(--yellow);
-  font-family: 'Playfair Display', 'Georgia', 'Cambria';
+  /* color: ${props => props.theme.colors.primary}; */
+  /* font-family: ${props => props.theme.fontFamily.serif}; */
+  font-family: var(--serif);
 
   span {
     font-weight: 700;
