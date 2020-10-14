@@ -48,8 +48,22 @@ button {
   line-height: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 
-/* Global */
+::selection {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+
+/* Global Vars */
 
 :root {
 --black:     #0a0a0a;
@@ -67,12 +81,8 @@ button {
 --grey-900:  #212121;
 
 --yellow:    #ffd034;
-}
 
-
-::selection {
-  background-color: var(--yellow);
-  color: var(--black);
+--serif: 'Playfair Display', 'Georgia', 'Cambria';
 }
 
 body {
@@ -92,8 +102,9 @@ a {
 `;
 
 const theme = {
-  colors: {
-    primary: '#0070f3',
+  screen: {
+    md: '700',
+    lg: '1200px',
   },
 };
 
