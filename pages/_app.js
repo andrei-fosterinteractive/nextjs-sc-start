@@ -2,7 +2,6 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -51,6 +50,7 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -86,8 +86,7 @@ html {
 }
 
 body {
-  background: var(--white);
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   text-rendering: optimizeLegibility;
